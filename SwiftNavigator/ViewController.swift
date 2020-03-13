@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     
     func navigateToTutorial() {
-        TutorialViewController.navigate(navigationController: self.navigationController)
+        
     }
     
     @IBAction

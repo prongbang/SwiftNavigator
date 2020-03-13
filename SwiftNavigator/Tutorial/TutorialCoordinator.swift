@@ -10,16 +10,24 @@ import UIKit
 
 class TutorialCoordinator: BaseCoordinator {
     
-    var navigationController: UINavigationController?
-    var product: Product?
-
-    init(product: Product, navigationController :UINavigationController?) {
-        self.navigationController = navigationController
-        self.product = product
+    lazy var controller: TutorialViewController = {
+        let viewController = TutorialViewController.instantiate(name: "Tutorial")
+        let viewModel: TutorialViewModel = TutorialViewModel()
+        viewController.viewModel = viewModel
+        return viewController
+    }()
+    
+    let router: RouterProtocol
+    init(router: RouterProtocol) {
+        self.router = router
     }
-
+    
     override func start() {
         
     }
     
+}
+
+extension TutorialCoordinator: Drawable {
+    var viewController: UIViewController? { return controller }
 }

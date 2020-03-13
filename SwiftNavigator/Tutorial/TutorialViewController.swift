@@ -8,7 +8,9 @@
 
 import UIKit
 
-class TutorialViewController: UIViewController {
+class TutorialViewController: UIViewController, Storyboarded {
+    
+    internal var viewModel: TutorialViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +35,7 @@ class TutorialViewController: UIViewController {
         let viewController = UIStoryboard(name: "Tutorial", bundle: nil).instantiateViewController(withIdentifier: storeboardId) as! TutorialViewController
         navigationController?.pushViewController(viewController, animated: true)
     }
-    
+
     static func navigateXib(navigationController: UINavigationController?) {
         // By Xib or Programmatically
         let viewController = TutorialViewController()
