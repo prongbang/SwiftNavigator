@@ -14,6 +14,18 @@
 		FBC945B02417728700AB735C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC945AF2417728700AB735C /* Assets.xcassets */; };
 		FBC945B32417728700AB735C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC945B12417728700AB735C /* LaunchScreen.storyboard */; };
 		FBC945BE2417728700AB735C /* SwiftNavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC945BD2417728700AB735C /* SwiftNavigatorTests.swift */; };
+		FBC945CC2417730F00AB735C /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC945CB2417730F00AB735C /* Tutorial.storyboard */; };
+		FBC945CF2417743B00AB735C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC945CE2417743B00AB735C /* Coordinator.swift */; };
+		FBC945D12417746900AB735C /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC945D02417746900AB735C /* BaseCoordinator.swift */; };
+		FBC945D32417749E00AB735C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC945D22417749E00AB735C /* AppCoordinator.swift */; };
+		FBC945D5241774E400AB735C /* MyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC945D4241774E400AB735C /* MyCoordinator.swift */; };
+		FBC945D82417752B00AB735C /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC945D72417752B00AB735C /* MyViewController.swift */; };
+		FBC945DA2417754F00AB735C /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC945D92417754F00AB735C /* My.storyboard */; };
+		FBC945DC2417759300AB735C /* MyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC945DB2417759300AB735C /* MyViewModel.swift */; };
+		FBC945DE241777BF00AB735C /* TutorialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC945DD241777BF00AB735C /* TutorialCoordinator.swift */; };
+		FBC945E02417785700AB735C /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC945DF2417785700AB735C /* Product.swift */; };
+		FBC945E324178C6C00AB735C /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC945E124178C6C00AB735C /* TutorialViewController.swift */; };
+		FBC945E424178C6C00AB735C /* TutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBC945E224178C6C00AB735C /* TutorialViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +50,18 @@
 		FBC945B92417728700AB735C /* SwiftNavigatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNavigatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC945BD2417728700AB735C /* SwiftNavigatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNavigatorTests.swift; sourceTree = "<group>"; };
 		FBC945BF2417728700AB735C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBC945CB2417730F00AB735C /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
+		FBC945CE2417743B00AB735C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		FBC945D02417746900AB735C /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		FBC945D22417749E00AB735C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		FBC945D4241774E400AB735C /* MyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCoordinator.swift; sourceTree = "<group>"; };
+		FBC945D72417752B00AB735C /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		FBC945D92417754F00AB735C /* My.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = My.storyboard; sourceTree = "<group>"; };
+		FBC945DB2417759300AB735C /* MyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewModel.swift; sourceTree = "<group>"; };
+		FBC945DD241777BF00AB735C /* TutorialCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCoordinator.swift; sourceTree = "<group>"; };
+		FBC945DF2417785700AB735C /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		FBC945E124178C6C00AB735C /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		FBC945E224178C6C00AB735C /* TutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +103,9 @@
 		FBC945A52417728500AB735C /* SwiftNavigator */ = {
 			isa = PBXGroup;
 			children = (
+				FBC945D62417751500AB735C /* My */,
+				FBC945CD2417743000AB735C /* Coordinators */,
+				FBC945C82417729B00AB735C /* Tutorial */,
 				FBC945A62417728500AB735C /* AppDelegate.swift */,
 				FBC945A82417728500AB735C /* SceneDelegate.swift */,
 				FBC945AA2417728500AB735C /* ViewController.swift */,
@@ -97,6 +124,39 @@
 				FBC945BF2417728700AB735C /* Info.plist */,
 			);
 			path = SwiftNavigatorTests;
+			sourceTree = "<group>";
+		};
+		FBC945C82417729B00AB735C /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				FBC945CB2417730F00AB735C /* Tutorial.storyboard */,
+				FBC945DD241777BF00AB735C /* TutorialCoordinator.swift */,
+				FBC945E124178C6C00AB735C /* TutorialViewController.swift */,
+				FBC945E224178C6C00AB735C /* TutorialViewController.xib */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		FBC945CD2417743000AB735C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				FBC945CE2417743B00AB735C /* Coordinator.swift */,
+				FBC945D02417746900AB735C /* BaseCoordinator.swift */,
+				FBC945D22417749E00AB735C /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		FBC945D62417751500AB735C /* My */ = {
+			isa = PBXGroup;
+			children = (
+				FBC945D4241774E400AB735C /* MyCoordinator.swift */,
+				FBC945D72417752B00AB735C /* MyViewController.swift */,
+				FBC945D92417754F00AB735C /* My.storyboard */,
+				FBC945DB2417759300AB735C /* MyViewModel.swift */,
+				FBC945DF2417785700AB735C /* Product.swift */,
+			);
+			path = My;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,8 +240,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC945E424178C6C00AB735C /* TutorialViewController.xib in Resources */,
 				FBC945B32417728700AB735C /* LaunchScreen.storyboard in Resources */,
 				FBC945B02417728700AB735C /* Assets.xcassets in Resources */,
+				FBC945CC2417730F00AB735C /* Tutorial.storyboard in Resources */,
+				FBC945DA2417754F00AB735C /* My.storyboard in Resources */,
 				FBC945AE2417728500AB735C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,9 +263,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC945D5241774E400AB735C /* MyCoordinator.swift in Sources */,
+				FBC945DE241777BF00AB735C /* TutorialCoordinator.swift in Sources */,
 				FBC945AB2417728500AB735C /* ViewController.swift in Sources */,
+				FBC945D12417746900AB735C /* BaseCoordinator.swift in Sources */,
 				FBC945A72417728500AB735C /* AppDelegate.swift in Sources */,
+				FBC945E02417785700AB735C /* Product.swift in Sources */,
+				FBC945DC2417759300AB735C /* MyViewModel.swift in Sources */,
+				FBC945D82417752B00AB735C /* MyViewController.swift in Sources */,
+				FBC945CF2417743B00AB735C /* Coordinator.swift in Sources */,
 				FBC945A92417728500AB735C /* SceneDelegate.swift in Sources */,
+				FBC945E324178C6C00AB735C /* TutorialViewController.swift in Sources */,
+				FBC945D32417749E00AB735C /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

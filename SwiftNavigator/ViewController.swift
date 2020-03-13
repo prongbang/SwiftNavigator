@@ -9,12 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print("ViewController")
     }
-
-
+    
+    
+    func navigateToTutorial() {
+        TutorialViewController.navigate(navigationController: self.navigationController)
+    }
+    
+    @IBAction
+    func buttonAction(sender: UIButton!) {
+        navigateToTutorial()
+    }
 }
 
